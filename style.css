@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #f9fbfd; 
+  color: #333;
+  padding: 20px;
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container {
+  max-width: 800px;
+  background-color: #fff; 
+  margin: 0 auto; 
+  padding: 30px 20px; 
+  border-radius: 16px; 
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15); 
+  text-align: center;
+  transition: box-shadow 0.3s ease; 
+}
+
+.container:hover {
+  box-shadow: 0 12px 28px rgba(0, 123, 255, 0.25); 
+}
+
+
+.logo-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; 
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15)); 
+}
+
+video#wc {
+  border-radius: 10px; 
+  border: 2px solid #007bff; 
+  margin-bottom: 20px;
+  width: 224px; 
+  height: 224px; 
+  object-fit: cover; 
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); 
+}
+
+.button-count-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; 
+  gap: 15px; 
+}
+
+.btn-count-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%; 
+}
+
+.btn-count-wrapper button {
+  padding: 10px 12px; 
+  background-color: #007bff; 
+  border: none;
+  border-radius: 6px; 
+  color: white;
+  cursor: pointer;
+  font-size: 14px; 
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.4); 
+}
+
+.btn-count-wrapper button:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.7); 
+}
+
+.count-text {
+  margin-top: 5px; 
+  font-weight: 600; 
+  font-size: 14px;
+  color: #444;
+  user-select: none; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  margin-bottom: 15px; 
+  flex-wrap: wrap; 
+}
+
+.buttons button {
+  padding: 10px 20px; 
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px; 
+  color: white;
+  cursor: pointer;
+  font-size: 15px; 
+  transition: background-color 0.3s ease;
+  min-width: 140px; 
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3); 
+}
+
+.buttons button:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 18px rgba(0, 86, 179, 0.5); 
+}
+
+.info-text {
+  margin: 10px 0; 
+  font-size: 14px;
+  color: #666; 
+  line-height: 1.5; 
+  max-width: 90%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+#prediction {
+  margin-top: 10px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  min-height: 30px; 
+  color: #007bff;
+  letter-spacing: 1px; 
+  user-select: none; 
+  text-shadow: 0 1px 4px rgba(0, 123, 255, 0.5); 
+}

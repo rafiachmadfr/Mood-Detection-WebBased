@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mood Detection Web</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <div class="container">
+
+    <div class="logo-group">
+      <img src="logo.png" alt="Logo Personal" class="logo" />
+      <img src="bangkit.png" alt="Logo Bangkit" class="logo" />
+    </div>
+
+    <video autoplay playsinline muted id="wc" width="224" height="224"></video>
+
+    <div class="button-count-group">
+      <div class="btn-count-wrapper">
+        <button id="0" onclick="handleButton(this)">Neutral</button>
+        <div id="neutralsamples" class="count-text">Neutral Samples: 0</div>
+      </div>
+      <div class="btn-count-wrapper">
+        <button id="1" onclick="handleButton(this)">Happy</button>
+        <div id="happysamples" class="count-text">Happy Samples: 0</div>
+      </div>
+      <div class="btn-count-wrapper">
+        <button id="2" onclick="handleButton(this)">Sad</button>
+        <div id="sadsamples" class="count-text">Sad Samples: 0</div>
+      </div>
+      <div class="btn-count-wrapper">
+        <button id="3" onclick="handleButton(this)">Angry</button>
+        <div id="angrysamples" class="count-text">Angry Samples: 0</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="train" onclick="doTraining()">Train Network</button>
+    </div>
+
+    <p class="info-text">
+      Setelah pelatihan selesai, klik 'Start Predicting' untuk melihat prediksi, dan 'Stop Predicting' untuk berhenti. Setelah Anda puas dengan model Anda, klik 'Download Model' untuk menyimpan model ke disk lokal Anda.
+    </p>
+
+    <div class="buttons">
+      <button id="startPredicting" onclick="startPredicting()">Start Predicting</button>
+      <button id="stopPredicting" onclick="stopPredicting()">Stop Predicting</button>
+      <button id="saveModel" onclick="saveModel()">Download Model</button>
+    </div>
+
+    <div id="prediction" class="prediction-box"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="webcam.js"></script>
+  <script src="rps-dataset.js"></script>
+  <script src="C1_W4_Assignment.js"></script>
+</body>
+</html>
